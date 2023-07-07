@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Lato", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 26px;
+    color: #73736f;
+}
+
+html, body{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.top-menu{
+    width: 100%;
+    background-color: #f6f2ef;
+}
+
+nav ul, nav ul li{
+    position: relative;
+    width: auto;
+    height: 100%;
+}
+
+nav ul li a, nav ul li span.nohref{
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    padding: 13.5px 17.5px;
+}
+
+nav ul li a:hover, nav ul li a.active, nav ul li:hover span.nohref{
+    color: #c5b8a8;
+}
+
+.primary-menu .submenu {
+    background-color: #fff;
+    border: solid 1px #000;
+    border-top: none;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    
+    opacity: 0;
+    -webkit-transition: opacity .4s ease-in-out;
+    -moz-transition: opacity .4s ease-in-out;
+    -ms-transition: opacity .4s ease-in-out;
+    -o-transition: opacity .4s ease-in-out;
+    transition: opacity .4s ease-in-out;
+
+    width: 190px;
+    height: auto;
+    z-index: 9;
+
+    visibility: hidden;
+}
+
+.primary-menu li.has-submenu:hover > .submenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.primary-menu .submenu li:not(:last-child){
+    border-bottom: solid 1px #000;
+}
+
+.primary-menu .submenu li a {
+    padding: 10px;
+}
+
+.socials a {
+    padding: 13.5px 10px;
+    font-size: 1.3rem;
+}
+
+.socials a:hover {
+    color: #c5b8a8;
+}
+
+.search{
+    position: relative;
+}
+
+.search .search-field{
+    background-color: #fff;
+    color: #73736f;
+    width: 180px;
+    height: auto;
+    border: none;
+    outline: none;
+    
+    font-size: 1.2rem;
+    font-weight: 400;
+
+    padding: 6.5px 10px;
+    padding-right: 35px;
+    margin: 7px 0;
+}
+
+.search .search-icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    width: 1.2rem;
+    height: auto;
+    font-size: 1.2rem;
+}
+
+.search input:focus ~ .search-icon{
+    color: #c5b8a8;
+}
+
+.logo{
+    padding-top: 45px;
+    padding-bottom: 55px;
+}
+
+.logo img{
+    max-height: 90px;
+    height: 100%;
+}
+
+.bottom-menu{
+    position: relative;
+    width: 100%;
+}
+
+.bottom-menu:before, .bottom-menu:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    background-image: url(/images/category-menu-hr.png);
+    background-origin: border-box;
+    background-position: center center;
+    background-repeat: repeat-x;
+    background-size: contain;
+    width: 100%;
+    height: 1px;
+}
+
+.bottom-menu:before{
+    top: 0;
+}
+
+.bottom-menu:after{
+    bottom: 0;
+}
+
+.bottom-menu nav ul li a {
+    padding: 12px 17px;
+}
