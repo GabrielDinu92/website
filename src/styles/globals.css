@@ -41,7 +41,7 @@ nav ul, nav ul li{
 }
 
 nav ul li a, nav ul li span.nohref{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     letter-spacing: 1px;
     padding: 13.5px 17.5px;
 }
@@ -88,7 +88,7 @@ nav ul li a:hover, nav ul li a.active, nav ul li:hover span.nohref{
 
 .socials a {
     padding: 13.5px 10px;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
 .socials a:hover {
@@ -107,7 +107,7 @@ nav ul li a:hover, nav ul li a.active, nav ul li:hover span.nohref{
     border: none;
     outline: none;
     
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 400;
 
     padding: 6.5px 10px;
@@ -120,9 +120,9 @@ nav ul li a:hover, nav ul li a.active, nav ul li:hover span.nohref{
     top: 50%;
     transform: translateY(-50%);
     right: 10px;
-    width: 1.2rem;
+    width: 1.4rem;
     height: auto;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .search input:focus ~ .search-icon{
@@ -148,7 +148,7 @@ nav ul li a:hover, nav ul li a.active, nav ul li:hover span.nohref{
     content: "";
     position: absolute;
     left: 0;
-    background-image: url(/images/category-menu-hr.png);
+    background-image: url('/images/category-menu-hr.png');
     background-origin: border-box;
     background-position: center center;
     background-repeat: repeat-x;

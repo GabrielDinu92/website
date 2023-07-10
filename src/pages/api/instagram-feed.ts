@@ -12,7 +12,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const fetchedPosts = mediaData.map((media: any) => ({
       id: media.id,
       imageUrl: media.images.standard_resolution.url,
-      caption: media.caption ? media.caption.text : '',
+      caption: media.caption ? media.caption.text : ''
     }));
 
     res.status(200).json({ posts: fetchedPosts });

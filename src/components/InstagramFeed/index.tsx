@@ -27,6 +27,7 @@ const InstagramFeed: React.FC = () => {
   return (
     <>
       <h1>Instagram Feed</h1>
+      
       {posts.map((post) => (
         <div key={post.id}>
           <img src={post.imageUrl} alt="Instagram Post" />

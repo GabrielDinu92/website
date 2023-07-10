@@ -5,7 +5,7 @@ import InstagramFeed from '@components/InstagramFeed';
 const Footer = () => {
   return (
     <footer>
-      <InstagramFeed />
+      {/* <InstagramFeed /> */}
     </footer>
   );
 };
